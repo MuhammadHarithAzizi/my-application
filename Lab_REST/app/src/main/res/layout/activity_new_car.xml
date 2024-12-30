@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:useDefaultMargins="true"
+    android:alignmentMode="alignBounds"
+    android:id="@+id/main"
+    android:columnOrderPreserved="false"
+    android:background="#313131"
+    android:textColor="@color/white"
+
+    android:columnCount="2">
+
+    <TextView
+        android:layout_columnSpan="2"
+        android:layout_marginBottom="20dp"
+
+        android:layout_gravity="center_horizontal"
+        android:text="Add New Car"
+        android:fontFamily="@font/gotham"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="32dip" />
+
+    <TextView
+        android:layout_columnSpan="2"
+
+        android:layout_gravity="center"
+        android:text="Enter Car information"
+        android:fontFamily="@font/gotham"
+        android:textColor="@color/white"
+        android:textSize="16dip"
+        android:layout_marginBottom="8dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="10dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_columnSpan="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgCarCover"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    app:srcCompat="@drawable/bmw" />
+
+                <Button
+                    android:id="@+id/btnBrowsePicture"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="choosePhoto"
+                    android:text="Browse..." />
+
+
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:textColorHint="#FF8A99AF">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="16dp"
+                    android:hint="Model"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+
+                    android:id="@+id/txtModel"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FF8A99AF">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="16dp"
+                    android:hint="Brand"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+
+                    android:id="@+id/txtBrand"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FF8A99AF">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="1dp"
+                    android:hint="PlateNumber"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:id="@+id/txtPlateNumber"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:textColorHint="#FF8A99AF">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawablePadding="16dp"
+                    android:hint="Availability"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+
+                    android:id="@+id/txtAvailability"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="355dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="85dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tvCreated"
+                        android:layout_width="225dp"
+                        android:layout_height="wrap_content"
+                        android:text="Created At: YYYY-MM-DD" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Date"
+                    android:layout_weight="0.35"
+                    android:onClick="showDatePickerDialog" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add Car"
+                    android:background="@drawable/rounded_button"
+                    android:fontFamily="@font/gotham"
+                    android:onClick="addNewCar" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</GridLayout>

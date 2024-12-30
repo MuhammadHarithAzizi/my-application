@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".CustomerRegister">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp"
+        android:background="@drawable/custom_edittext">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="24dp"
+            android:text="Customer Registration Form"
+            android:textColor="@color/darkblue"
+            android:textSize="20dp">
+
+
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Admin Registration"
+                android:textAlignment="center"
+                android:textColor="@color/bluebutton"
+                android:textSize="36sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Username"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Email"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+            <EditText
+                android:id="@+id/edtContact"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Contact Number"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+
+            <EditText
+                android:id="@+id/edtAddress"
+                android:layout_width="300dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_edittext"
+                android:drawablePadding="8dp"
+                android:hint="Address"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/cardview_dark_background" />
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/darkblue"
+        android:text="Register"
+        android:onClick="loginClicked"
+        android:textSize="18sp"
+        app:cornerRadius="20dp" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="LoginCustomer"
+        android:text="Already have an account?\nAdmin Login Here"
+        android:textAlignment="center"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+</LinearLayout>
+

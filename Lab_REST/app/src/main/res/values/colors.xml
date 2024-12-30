@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple">#A020F0</color>
+    <color name="darkblue">#00008B</color>
+    <color name="lightblue">#f2f1f6</color>
+    <color name="bluebutton">#FF2A5560</color>
+    <color name="pastleblue">#A7C7E7</color>
+    <color name="marianblue">#E1EBEE</color>
+    <color name="colorPrimary">#512da8</color>
+    <color name="colorPrimaryDark">#512da8</color>
+    <color name="colorAccent">#8165c0</color>
+
+    <color name="primaryGreen">#00B386</color>
+    <color name="inputBackgroundGray">#E0E0E0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="newColor">#FFBB86FC</color>
+    <color name="lightGray">#D3D3D3</color>
+</resources>

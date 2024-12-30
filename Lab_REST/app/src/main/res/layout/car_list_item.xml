@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="#313131"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/imgCarCover"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/bmw"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp" />
+
+
+
+    <TextView
+        android:id="@+id/tvModel"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/imgCarCover"
+        android:layout_height="wrap_content"
+        android:text="User ID"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        />
+
+    <TextView
+        android:id="@+id/tvBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvModel"
+        android:layout_marginTop="2dp"
+        android:text="Car ID"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:layout_toRightOf="@+id/imgCarCover"/>
+
+    <TextView
+        android:id="@+id/tvPlateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgCarCover"
+        android:layout_below="@+id/tvBrand"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Booking Date" />
+
+    <TextView
+        android:id="@+id/tvAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgCarCover"
+        android:layout_below="@+id/tvPlateNumber"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Status" />
+
+    <TextView
+        android:id="@+id/tvCreatedAt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgCarCover"
+        android:layout_below="@+id/tvAvailability"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Status" />
+
+</RelativeLayout>

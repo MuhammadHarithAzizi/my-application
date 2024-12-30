@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#313131">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="Booking Details"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gotham"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details of the booking"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@color/white"
+            android:fontFamily="@font/gotham"
+            android:layout_margin="16dp"/>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#FF5722"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Booking ID:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvBookingId"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#AEE6FD"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="User ID:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvUserId"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#FF5722"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Car ID:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCarId"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#AEE6FD"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Booking Date:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvBookingDate"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#FF5722"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Booking Status:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvStatus"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#AEE6FD"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Booking Remarks:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvRemarks"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#FF5722"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Admin Message:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvAdminMsg"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#F42D1E"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Created At:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvCreatedAt"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/layout_border"
+            android:layout_width="match_parent"
+            android:layout_height="80dp">
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:background="#F42D1E"
+                android:layout_width="60dp"
+                android:layout_height="60dp" />
+
+            <LinearLayout
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="Updated At:"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:text="12 New Items"
+                    android:textSize="14sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/gotham"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvUpdatedAt"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

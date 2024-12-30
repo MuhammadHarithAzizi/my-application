@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="#313131"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        />
+
+    <TextView
+        android:id="@+id/tvType"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/star"
+        android:layout_height="wrap_content"
+        android:text="User ID"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        />
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvType"
+        android:layout_marginTop="2dp"
+        android:text="Car ID"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:layout_toRightOf="@+id/star"/>
+
+    <TextView
+        android:id="@+id/tvMaintenanceDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/star"
+        android:layout_below="@+id/tvCost"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Booking Date" />
+
+    <TextView
+        android:id="@+id/tvUpdatedMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/star"
+        android:layout_below="@+id/tvMaintenanceDate"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Status" />
+
+
+
+</RelativeLayout>

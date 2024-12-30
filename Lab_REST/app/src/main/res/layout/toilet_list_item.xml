@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="3dp"
+    android:background="#313131"
+    android:padding="5dp">
+
+
+    <ImageView
+        android:id="@+id/ivToilet"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/noimage"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp" />
+
+
+
+    <TextView
+        android:id="@+id/tvToiletName"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/ivToilet"
+        android:layout_height="wrap_content"
+        android:text="Toilet Name"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        />
+
+    <TextView
+        android:id="@+id/tvToiletId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvToiletName"
+        android:layout_marginTop="2dp"
+        android:text="Toilet Id"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"/>
+
+    <TextView
+        android:id="@+id/tvToiletLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvToiletId"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Toilet Location" />
+
+    <TextView
+        android:id="@+id/tvToiletDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvToiletLocation"
+        android:textColor="@color/white"
+        android:fontFamily="@font/gotham"
+        android:text="Toilet Description" />
+
+</RelativeLayout>

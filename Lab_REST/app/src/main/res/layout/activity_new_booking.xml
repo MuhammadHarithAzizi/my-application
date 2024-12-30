@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#02093D"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:theme="@style/AppTheme.Toolbar">
+        </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/rental" />
+
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="-50dp"
+                    android:layout_marginBottom="-20dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="8dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Select Car"
+                                    android:textColor="#FF8A99AF"
+                                    android:textSize="16sp" />
+
+                                <Spinner
+                                    android:id="@+id/spCar"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" />
+
+                            </LinearLayout>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/tvBookingDate"
+                                    android:layout_width="203dp"
+                                    android:layout_height="53dp"
+                                    android:drawableStart="@drawable/ic_date_range_light_blue_24dp"
+                                    android:drawablePadding="16dp"
+                                    android:hint="Booking Date"
+                                    android:inputType="date"
+                                    android:maxLines="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="16sp" />
+
+                                <Button
+                                    android:id="@+id/button"
+                                    android:layout_width="151dp"
+                                    android:layout_height="wrap_content"
+                                    android:onClick="showDatePickerDialog"
+                                    android:backgroundTint="@color/darkblue"
+                                    android:text="Pick Date"
+                                    android:fontFamily="@font/gotham"/>
+                            </LinearLayout>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
+                                android:drawablePadding="16dp"
+                                android:hint="Remarks"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+
+                                android:id="@+id/txtRemarks"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <EditText
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableStart="@drawable/ic_arrow_back_white_24dp"
+                                android:drawablePadding="16dp"
+                                android:hint="Status"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp"
+                                android:id="@+id/txtStatus"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:textColorHint="#FF8A99AF">
+
+                            <TextView
+                                android:id="@+id/tvCreatedAt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawableStart="@drawable/ic_star"
+                                android:drawablePadding="16dp"
+                                android:hint="Created At"
+                                android:inputType="text"
+                                android:maxLines="1"
+                                android:textColor="@android:color/black"
+                                android:textSize="16sp" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <Button
+                    android:id="@+id/btnAddBooking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/darkblue"
+                    android:text="Add Booking"
+                    android:fontFamily="@font/gotham"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:onClick="addNewBooking" />
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="26dp"
+        android:layout_marginTop="10dp"
+        android:text="Hey Welcome!"
+        android:fontFamily="@font/gotham"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_anchor="@+id/appBarLayout3"
+        app:layout_anchorGravity="center" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="328dp"
+        android:layout_height="253dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.033"
+        app:srcCompat="@drawable/bmw" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.318"
+        app:srcCompat="@drawable/arc_1" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@color/lightblue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_editor_absoluteY="254dp" />
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="352dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="28dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="355dp"
+        android:layout_height="74dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="28dp"
+        android:text="RENTOPEDIA RENTAL APPS"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <Button
+        android:id="@+id/btnBookingList"
+        android:layout_width="161dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#0E1716"
+        android:onClick="bookingListClicked"
+        android:text="BOOKING LIST"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvHello"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <Button
+        android:id="@+id/btnMaintenance"
+        android:layout_width="171dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#101918"
+        android:onClick="maintenaceListClicked"
+        android:text="MAINTENANCE LIST"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBookingList"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/btnCar"
+        android:layout_width="171dp"
+        android:layout_height="59dp"
+        android:backgroundTint="#101918"
+        android:onClick="carListClicked"
+        android:text="CAR LIST"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBookingList"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="149dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#101918"
+        android:onClick="logoutClicked"
+        android:text="LOGOUT"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMaintenance"
+        app:layout_constraintVertical_bias="0.517" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

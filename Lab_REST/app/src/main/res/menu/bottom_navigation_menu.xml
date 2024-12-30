@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_restroom"
+        android:icon="@drawable/ic_restroom"
+        android:title="Restroom" />
+    <item
+        android:id="@+id/nav_map"
+        android:icon="@drawable/ic_map"
+        android:title="Map" />
+    <item
+        android:id="@+id/nav_my_location"
+        android:icon="@drawable/ic_my_location"
+        android:title="My location" />
+    <item
+        android:id="@+id/nav_emergency_share"
+        android:icon="@drawable/ic_emergency_share"
+        android:title="Emergency share" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_user"
+        android:title="Profile" />
+</menu>
